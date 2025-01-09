@@ -23,11 +23,11 @@
     <!-- CSS BootStrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./css/my-bootstrap.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/toPagetop.css" />
+    <link rel="stylesheet" href="../css/my-bootstrap.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/toPagetop.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -44,15 +44,19 @@
 </script>
 
 <body>
+    <link rel="prefetch" href="../">
+    <link rel="prefetch" href="../info/">
 
+    <!-- header -->
     <header>
         <nav class="navbar">
-            <div class="logo">My Website</div>
+            <div class="logo"><a href="../"><img src="../img/logo.png" alt="あさの横浜"></a></div>
             <ul class="nav-links" id="nav-links">
-                <li><link rel="prefetch" href="./">例会情報</link></li>
-                <li><a href="./">About</a></li>
-                <li><a href="./">Services</a></li>
-                <li><a href="./">Contact</a></li>
+                <li><a href="../info/">例会情報</a></li>
+                <li><a href="../guest/">ゲスト様へ</a></li>
+                <li><a href="../features/">あさの横浜の特徴</a></li>
+                <li><a href="../members/">会員紹介</a></li>
+                <li><a href="../contact/">お問合せ</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -63,11 +67,13 @@
     </header>
     <!-- header -->
 
-    <img src="/img/image8.png" alt="">
+    <main>
+        <img src="../img/image8.png" alt="">
+    </main>
 
     <!-- To TOP -->
     <!-- <div><a href="#" id="page_top"></a></div> -->
 
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

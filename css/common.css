@@ -1,0 +1,9 @@
+/* ページ遷移アニメーション */
+main {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* スムーズなアニメーション */
+}
+
+main.loaded {
+    opacity: 1;
+}

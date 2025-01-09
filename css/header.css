@@ -1,25 +1,17 @@
-/* Reset styles */
-body,
-html,
-ul {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* Navbar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:10px 20px;
+    padding:5px 0px 5px 20px;
     background-color: #79b0de;
     color: white;
-    height: auto;
+    height: 10svh;
 }
 
 .logo img{
-    width: 150px;
+    width: 120px;
     height: auto;
 }
 
@@ -37,6 +29,7 @@ ul {
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
+    font-weight: normal;
     transition: color 0.2s;
 }
 
