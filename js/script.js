@@ -37,3 +37,18 @@ window.addEventListener("load", () => {
     }
   });
   
+// アコーディオンを制御するスクリプト
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const target = document.querySelector(header.dataset.target);
+
+        // 他のアイテムを閉じないようにする
+        if (header.classList.contains('active')) {
+            header.classList.remove('active');
+            target.classList.remove('active');
+        } else {
+            header.classList.add('active');
+            target.classList.add('active');
+        }
+    });
+});

@@ -7,3 +7,7 @@ main {
 main.loaded {
     opacity: 1;
 }
+
+img {
+    max-width: -webkit-fill-available;
+}
