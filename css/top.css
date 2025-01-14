@@ -276,16 +276,11 @@
     }
 
     .info-items-container {
-        letter-spacing: 1px;
+        letter-spacing: 0;
     }
-    .info-heading {
-        font-size: 1rem;
-    }
-    .info-heading-blue {
-        font-size: 1rem;
-    }
+
     .info-table {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 @media screen and (max-width: 377px) {
@@ -293,15 +288,6 @@
         width: 20%;
     }
 
-    .info-items-container {
-        letter-spacing: 0;
-    }
-    .info-heading {
-        font-size: 0.9rem;
-    }
-    .info-heading-blue {
-        font-size: 0.9rem;
-    }
     .info-table {
         font-size: 0.9rem;
     }
