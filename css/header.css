@@ -8,7 +8,7 @@
     padding: 5px 20px;
     background-color: #79b0de;
     color: white;
-    width: 100vw;
+    width: 100%;
     height: auto;
     z-index: 1000;
 }
@@ -20,6 +20,8 @@
 @media screen and (max-width: 599px) {
     .logo img{
         width: 15vw;
+        /* height: auto;
+        display: block; */
     }
 }
 
