@@ -58,29 +58,88 @@
     }
 }
 
-.catch-box {
+.catch-container {
     background-color: #61c0ff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10svh;
 }
-.catch-text {
-    color: #ff0000;
-    letter-spacing: 2px;
-}
+
 @media screen and (max-width: 558px) {
-    .catch-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .hero-container {
+        height: 85svh;
+    }
+    .catch-container {
+        height: 15svh;
     }
 }
 
+.catch-text, .catch-text.str{
+    color: #ff0000;
+    letter-spacing: 2px;
+}
+.catch-text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 1400px) {
+    .catch-text {
+        font-size: 1.6rem;
+    }
+    .catch-text.str {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 1399px) {
+    .catch-text {
+        font-size: 1.6rem;
+    }
+    .catch-text.str {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 860px) {
+    .catch-text {
+        font-size: 1.2rem;
+    }
+    .catch-text.str {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .catch-text {
+        font-size: 1rem;
+    }
+    .catch-text.str {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .catch-text {
+        font-size: 1rem;
+    }
+    .catch-text.str {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 582px) {
+    .catch-text {
+        font-size: 1rem;
+    }
+    .catch-text.str {
+        font-size: 1.4rem;
+    }
+    .catch-text-box {
+        flex-direction: column;
+    }
+}
+
+
 .forms-box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -110,6 +169,146 @@
         padding: 0.5rem 0.1rem;
         border-radius: 25px;
     }
+}
+
+/* 例会情報 */
+.info-texts-container h2, h3 {
+    line-height: 45px;
+}
+.info-heading {
+    font-weight: normal;
+}
+.info-heading-blue {
+    font-weight: normal;
+    color: #008aff;
+}
+
+.info-table {
+    width: 100%;
+}
+.info-table th {
+    width: 15%;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+}
+@media screen and (min-width: 1400px) {
+    .info-items-container {
+        letter-spacing: 5px;
+    }
+    .info-heading {
+        font-size: 1.6rem;
+    }
+    .info-heading-blue {
+        font-size: 1.6rem;
+    }
+    .info-table {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 1399px) {
+    .info-items-container {
+        letter-spacing: 5px;
+    }
+    .info-heading {
+        font-size: 1.6rem;
+    }
+    .info-heading-blue {
+        font-size: 1.6rem;
+    }
+    .info-table {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .info-items-container {
+        letter-spacing: 5px;
+    }
+    .info-heading {
+        font-size: 1.5rem;
+    }
+    .info-heading-blue {
+        font-size: 1.5rem;
+    }
+    .info-table {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .info-items-container {
+        letter-spacing: 3px;
+    }
+    .info-heading {
+        font-size: 1.2rem;
+    }
+    .info-heading-blue {
+        font-size: 1.2rem;
+    }
+    .info-table {
+        font-size: 1.2rem;
+    }
+    .long-td {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 767px) {
+    .info-table th {
+        width: 20%;
+    }
+
+    .info-items-container {
+        letter-spacing: 2px;
+    }
+    .info-heading {
+        font-size: 1.2rem;
+    }
+    .info-heading-blue {
+        font-size: 1.2rem;
+    }
+    .info-table {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 469px) {
+    .info-table th {
+        width: 20%;
+    }
+
+    .info-items-container {
+        letter-spacing: 1px;
+    }
+    .info-heading {
+        font-size: 1rem;
+    }
+    .info-heading-blue {
+        font-size: 1rem;
+    }
+    .info-table {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 377px) {
+    .info-table th {
+        width: 20%;
+    }
+
+    .info-items-container {
+        letter-spacing: 0;
+    }
+    .info-heading {
+        font-size: 0.9rem;
+    }
+    .info-heading-blue {
+        font-size: 0.9rem;
+    }
+    .info-table {
+        font-size: 0.9rem;
+    }
+}
+
+.info-img {
+    width: 300px;
 }
 
 /* アコーディオン：各アイテム */

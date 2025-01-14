@@ -17,11 +17,14 @@
     width: 120px;
     height: auto;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
+    .logo img{
+        width: 10vw;
+    }
+}
+@media screen and (max-width: 500px) {
     .logo img{
         width: 15vw;
-        /* height: auto;
-        display: block; */
     }
 }
 
