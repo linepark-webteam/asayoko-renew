@@ -128,9 +128,31 @@ main.loaded {
 
 /* Navbar styles */
 
+/* Table styles */
+th {
+    font-weight: normal;
+    vertical-align: top;
+}
+/* Table styles */
+
+/* SNS icon styles */
+.sns-icon-box {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.sns-icon {
+    width: 10vw;
+    max-width: 50px;
+    height: auto;
+}
+
+
+/* SNS icon styles */
+
 
 /* footer styles */
-
 .footer {
     display: flex;
     flex-direction: column;
@@ -138,8 +160,11 @@ main.loaded {
     align-items: center;
 }
 .footer-logo {
-    width: 15vw;
-    max-width: 100px;
+    width: 25vw;
+    max-width: 150px;
+}
+.footer-copy {
+    color: #5e5e5e;
 }
 
 /* footer styles */

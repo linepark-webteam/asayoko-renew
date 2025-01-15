@@ -192,6 +192,18 @@
     text-align: left;
     vertical-align: top;
 }
+.info-table-maps {
+    display: flex;
+}
+.info-table-map {
+    width: 400px;
+    height: 177.34px;
+}
+.info-table-img {
+    padding: 0;
+    width: 400px;
+    height: auto;
+}
 @media screen and (min-width: 1400px) {
     .info-items-container {
         letter-spacing: 5px;
@@ -204,6 +216,19 @@
     }
     .info-table {
         font-size: 1.6rem;
+    }
+    .info-table-maps {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 100px;
+    }
+    .info-table-map {
+        width: 400px;
+        height: 177.34px;
+    }
+    .info-table-img {
+        width: 400px;
+        height: auto;
     }
 }
 @media screen and (max-width: 1399px) {
@@ -219,6 +244,9 @@
     .info-table {
         font-size: 1.6rem;
     }
+    .info-table-maps {
+        justify-content:space-between;
+    }
 }
 @media screen and (max-width: 1199px) {
     .info-items-container {
@@ -232,6 +260,14 @@
     }
     .info-table {
         font-size: 1.5rem;
+    }
+    .info-table-map {
+        width: 350px;
+        height: 177.34px;
+    }
+    .info-table-img {
+        width: 350px;
+        height: auto;
     }
 }
 @media screen and (max-width: 991px) {
@@ -250,6 +286,11 @@
     .long-td {
         display: flex;
         flex-direction: column;
+    }
+    .info-table-maps {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
     }
 }
 @media screen and (max-width: 767px) {
@@ -282,6 +323,14 @@
     .info-table {
         font-size: 0.9rem;
     }
+    .info-table-map {
+        width: 250px;
+        height: auto;
+    }
+    .info-table-img {
+        width: 250px;
+        height: auto;
+    }
 }
 @media screen and (max-width: 377px) {
     .info-table th {
@@ -291,11 +340,17 @@
     .info-table {
         font-size: 0.9rem;
     }
+    .info-table-map {
+        width: 200px;
+        height: auto;
+    }
+    .info-table-img {
+        width: 200px;
+        height: auto;
+    }
 }
 
-.info-img {
-    width: 300px;
-}
+
 
 /* アコーディオン：各アイテム */
 .accordion-item {
@@ -315,18 +370,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.6rem;
+    font-weight: normal;
     color: #333;
     border: none;
 }
-
-.accordion-header:hover {
-    background-color: #8de4ff;
+/* ヘッダー アクティブ時 */
+.accordion-header.active {
+    font-weight: bold;
 }
+
+/* .accordion-header:hover {
+    background-color: #8de4ff;
+} */
 
 /* アイコンのスタイル */
 .accordion-icon {
+    font-weight: normal;
     font-size: 1.5rem;
     transition: transform 0.3s ease;
 }
@@ -337,9 +397,9 @@
     display: inline-block;
 }
 /* アクティブ時（－） */
-.accordion-header.active .accordion-icon::before {
-    content: '\2212'; /* "-" */
-}
+/* .accordion-header.active .accordion-icon::before { */
+    /* content: '\2212'; "-" */
+/* } */
 
 /* コンテンツ */
 .accordion-content {
@@ -349,15 +409,44 @@
     background-color: #fff;
     padding: 0 15px;
 }
+/* アクティブ時のスタイル */
+.accordion-content.active {
+    max-height: 1000px; /* 十分な高さを指定 */
+    padding: 15px;
+}
 
+.accordion-content div,
 .accordion-content p {
     margin: 15px 0;
     line-height: 1.6;
+    font-size: 1.2rem;
+}
+.accordion-content-blue-text {
+    color: #008aff;
+    font-weight: bold;
 }
 
-/* アクティブ時のスタイル */
-
-.accordion-content.active {
-    max-height: 500px; /* 十分な高さを指定 */
-    padding: 15px;
+.accordion-content-table {
+    font-size: 1.2rem;
 }
+.accordion-content-table th {
+    width: 20%;
+    padding: 5px 0;
+}
+.accordion-content-table td {
+    padding: 5px 0;
+}
+
+.accordion-content-text-box {
+    display: flex;
+    justify-content: flex-end;
+}
+.accordion-content-text-box a {
+    color: #008aff;
+    text-decoration: underline;
+}
+
+.accordion-content-schedule p {
+    margin: 0;
+}
+
