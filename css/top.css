@@ -450,3 +450,110 @@
     margin: 0;
 }
 
+@media screen and (min-width: 1400px) {
+    .accordion-header {
+        font-size: 1.6rem;
+    }
+    .accordion-icon {
+        font-size: 1.5rem;
+    }
+    .accordion-content div,
+    .accordion-content p {
+        font-size: 1.2rem;
+    }
+    .accordion-content-table {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1399px) {
+    .accordion-header {
+        font-size: 1.6rem;
+    }
+    .accordion-icon {
+        font-size: 1.5rem;
+    }
+    .accordion-content div,
+    .accordion-content p {
+        font-size: 1.2rem;
+    }
+    .accordion-content-table {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .accordion-header {
+        font-size: 1.5rem;
+    }
+    .accordion-icon {
+        font-size: 1.4rem;
+    }
+    .accordion-content div,
+    .accordion-content p {
+        font-size: 1.2rem;
+    }
+    .accordion-content-table {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .accordion-header {
+        font-size: 1.2rem;
+    }
+    .accordion-icon {
+        font-size: 1.1rem;
+    }
+    .accordion-content div,
+    .accordion-content p {
+        font-size: 1rem;
+    }
+    .accordion-content-table {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .accordion-header {
+        font-size: 1.2rem;
+    }
+    .accordion-icon {
+        font-size: 1.1rem;
+    }
+    .accordion-content div,
+    .accordion-content p {
+        font-size: 1rem;
+    }
+    .accordion-content-table {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 469px) {
+    .accordion-header {
+        font-size: 1rem;
+    }
+    .accordion-icon {
+        font-size: 1rem;
+    }
+    .accordion-content div,
+    .accordion-content p {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+    .accordion-content-table {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 377px) {
+    .accordion-header {
+        font-size: 1rem;
+    }
+    .accordion-icon {
+        font-size: 1rem;
+    }
+    .accordion-content div,
+    .accordion-content p {
+        font-size: 0.8rem;
+    }
+    .accordion-content-table {
+        font-size: 0.8rem;
+    }
+}
+
