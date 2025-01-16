@@ -1,0 +1,83 @@
+main {
+    padding-top: var(--navbar-height);
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+h3, h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+p, span, li {
+    font-size: 1.5rem;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1399px) {
+    h2 {
+        font-size: 2.4rem;
+    }
+    h3, h4 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 1199px) {
+    h2 {
+        font-size: 2.2rem;
+    }
+    h3, h4 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 469px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 377px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+}
+

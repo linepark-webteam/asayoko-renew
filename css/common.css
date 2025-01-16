@@ -1,3 +1,9 @@
+/* For test */
+.spacer {
+    height: 500px;
+}
+
+
 /* ページ遷移アニメーション */
 main {
     opacity: 0;
@@ -8,14 +14,20 @@ main {
 main.loaded {
     opacity: 1;
 }
+/* ページ遷移アニメーション */
 
-/* For test */
-.spacer {
-    height: 500px;
+/* Font関連の共通スタイル  */
+* {
+    font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
 }
+.blue-text {
+    color: #008aff;
+    font-weight: bold;
+}
+/* Font関連の共通スタイル  */
 
-/* Navbar styles */
 
+/* ナビゲーションバー(ヘッダー)の共通スタイル */
 :root {
     --navbar-height: 90px; /* ヘッダーの高さ */
 }
@@ -147,20 +159,35 @@ main.loaded {
         transform: rotate(-45deg) translate(6px, -6px);
     }
 }
-/* Navbar styles */
+/* ナビゲーションバー(ヘッダー)の共通スタイル */
 
-/* Table styles */
+
+/* 画像の共通スタイル */
+img {
+    max-width: 100%;
+}
+/* 画像の共通スタイル */
+
+
+/* リストの共通スタイル */
+ul ul li {
+    list-style: none; /* ネストされた ul の li のリストスタイルを none にする */
+}
+/* リストの共通スタイル */
+
+
+/* テーブル(表)の共通スタイル */
 th {
     font-weight: normal;
     vertical-align: top;
 }
-/* Table styles */
+/* テーブル(表)の共通スタイル */
 
-/* SNS icon styles */
+/* SNSアイコンのスタイル */
 .sns-icon-box {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 25px;
 }
 
 .sns-icon {
@@ -168,10 +195,10 @@ th {
     max-width: 50px;
     height: auto;
 }
-/* SNS icon styles */
+/* SNSアイコンのスタイル */
 
 
-/* footer styles */
+/* フッターのスタイル */
 .footer {
     display: flex;
     flex-direction: column;
@@ -185,5 +212,4 @@ th {
 .footer-copy {
     color: #5e5e5e;
 }
-
-/* footer styles */
+/* フッターのスタイル */
