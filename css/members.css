@@ -14,6 +14,12 @@ p {
     letter-spacing: 1px;
 }
 
+.shusei-asayoko-map {
+    width: 30vw;
+    max-width: 500px;
+    height: auto;
+}
+
 @media screen and (max-width: 1399px) {
     h2 {
         font-size: 2.4rem;
@@ -37,20 +43,61 @@ p {
     }
 }
 @media screen and (max-width: 991px) {
+    h2 {
+        font-size: 2rem;
+        line-height: 2;
+    }
+    
+    p {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
 
+    .members-img {
+        display: flex;
+        justify-content: center;
+    }
+    .shusei-asayoko-map {
+        width: 45vw;
+        max-width: 700px;
+        height: auto;
+    }
 }
 @media screen and (max-width: 767px) {
-
+    h2 {
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    
+    p {
+        font-size: 0.9rem;
+        line-height: 2;
+    }
 }
 @media screen and (max-width: 469px) {
-
+    h2 {
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    
+    p {
+        font-size: 0.9rem;
+        line-height: 2;
+    }
+    .shusei-asayoko-map {
+        width: 60vw;
+        height: auto;
+    }
 }
 @media screen and (max-width: 377px) {
-
+    h2 {
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    
+    p {
+        font-size: 0.9rem;
+        line-height: 2;
+    }
 }
 
-.shusei-asayoko-map {
-    width: 30vw;
-    max-width: 500px;
-    height: auto;
-}
