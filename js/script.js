@@ -54,6 +54,25 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+// ページロード時に、もしURLにアンカーが含まれていればその位置にスクロール
+window.addEventListener('load', () => {
+  const hash = window.location.hash;  // 現在のURLのハッシュ（#form など）
+
+  if (hash) {
+    const targetElement = document.querySelector(hash);  // ハッシュに対応する要素を取得
+
+    if (targetElement) {
+      const headerHeight = document.querySelector(".navbar") ? document.querySelector(".navbar").offsetHeight : 0; // ヘッダーの高さを取得
+
+      // スクロール位置を調整してスムーズにスクロール
+      window.scrollTo({
+        top: targetElement.offsetTop - headerHeight,  // ヘッダー分だけオフセット
+        behavior: 'smooth'  // スムーズスクロール
+      });
+    }
+  }
+});
+
 // # をクリックしたときにページトップにスクロールする
 document.querySelectorAll('a[href="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
