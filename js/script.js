@@ -41,13 +41,16 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     // ターゲットとなるIDを取得
     const targetId = this.getAttribute("href").substring(1); // #form から form を取得
     const targetElement = document.getElementById(targetId); // 対象の要素を取得
-    const headerHeight = document.querySelector(".navbar").offsetHeight; // ヘッダーの高さを取得
 
-    // スクロール位置を調整してスムーズにスクロール
-    window.scrollTo({
-      top: targetElement.offsetTop - headerHeight, // ヘッダー分だけオフセット
-      behavior: "smooth", // スムーズスクロール
-    });
+    if (targetElement) {
+      const headerHeight = document.querySelector(".navbar") ? document.querySelector(".navbar").offsetHeight : 0; // ヘッダーの高さを取得（存在する場合）
+
+      // スクロール位置を調整してスムーズにスクロール
+      window.scrollTo({
+        top: targetElement.offsetTop - headerHeight, // ヘッダー分だけオフセット
+        behavior: "smooth", // スムーズスクロール
+      });
+    }
   });
 });
 

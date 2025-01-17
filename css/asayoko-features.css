@@ -1,7 +1,6 @@
 main {
     padding-top: var(--navbar-height);
 }
-
 h2 {
     font-size: 2.4rem;
     font-weight: bold;
@@ -99,6 +98,7 @@ p, span, li {
         font-size: 1rem;
     }
 }
+
 
 .catch, .catch-sub {
     font-weight: normal;
@@ -243,7 +243,7 @@ p, span, li {
     .catch-sub {
         font-size: 1rem;
         letter-spacing: 0;
-        white-space: nowrap;
+
     }
 
     .message-text p,
