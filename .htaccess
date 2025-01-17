@@ -1,2 +1,5 @@
-RewriteEngine On
-RewriteRule ^([^/]+)$ $1.html [L]
+AuthUserFile /home/users/2/boyfriend.jp-linepark-ayase/web/shusei/demo/.htpasswd
+AuthGroupFile /dev/null
+AuthName "アカウントとパスワードを入力してください"
+AuthType Basic
+require valid-user
