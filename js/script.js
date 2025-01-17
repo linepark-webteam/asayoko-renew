@@ -26,7 +26,7 @@ hamburger.addEventListener("click", () => {
 });
 
 // メニュー内リンクをクリックしたら閉じる処理
-navLinks.querySelectorAll("a").forEach(link => {
+navLinks.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("open"); // メニューを閉じる
     hamburger.classList.remove("toggle"); // ハンバーガーアイコンを戻す
@@ -34,37 +34,37 @@ navLinks.querySelectorAll("a").forEach(link => {
 });
 
 // ページ内リンクでリンク先の要素にヘッダー（.navbar）が被らないようにするスクリプト
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault(); // 通常のリンク動作をキャンセル
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault(); // 通常のリンク動作をキャンセル
 
-        // ターゲットとなるIDを取得
-        const targetId = this.getAttribute('href').substring(1); // #form から form を取得
-        const targetElement = document.getElementById(targetId); // 対象の要素を取得
-        const headerHeight = document.querySelector('.navbar').offsetHeight; // ヘッダーの高さを取得
+    // ターゲットとなるIDを取得
+    const targetId = this.getAttribute("href").substring(1); // #form から form を取得
+    const targetElement = document.getElementById(targetId); // 対象の要素を取得
+    const headerHeight = document.querySelector(".navbar").offsetHeight; // ヘッダーの高さを取得
 
-        // スクロール位置を調整してスムーズにスクロール
-        window.scrollTo({
-            top: targetElement.offsetTop - headerHeight, // ヘッダー分だけオフセット
-            behavior: 'smooth' // スムーズスクロール
-        });
+    // スクロール位置を調整してスムーズにスクロール
+    window.scrollTo({
+      top: targetElement.offsetTop - headerHeight, // ヘッダー分だけオフセット
+      behavior: "smooth", // スムーズスクロール
     });
+  });
 });
 
 // # をクリックしたときにページトップにスクロールする
-document.querySelectorAll('a[href="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault(); // 通常のリンク動作をキャンセル
+document.querySelectorAll('a[href="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault(); // 通常のリンク動作をキャンセル
 
-        // ページトップにスクロール
-        window.scrollTo({
-            top: 0, // ページトップにスクロール
-            behavior: 'smooth' // スムーズスクロール
-        });
+    // ページトップにスクロール
+    window.scrollTo({
+      top: 0, // ページトップにスクロール
+      behavior: "smooth", // スムーズスクロール
     });
+  });
 });
 
 // ページロード時にフェードイン
 window.addEventListener("load", () => {
-    document.querySelector("main").classList.add("loaded");
+  document.querySelector("main").classList.add("loaded");
 });
