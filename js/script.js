@@ -84,3 +84,40 @@ document.querySelectorAll('.accordion-header').forEach(header => {
         }
     });
 });
+
+// ページ内リンクでリンク先の要素にヘッダー（.navbar）が被らないようにするスクリプト
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // 通常のリンク動作をキャンセル
+
+        // ターゲットとなるIDを取得
+        const targetId = this.getAttribute('href').substring(1); // #form から form を取得
+        const targetElement = document.getElementById(targetId); // 対象の要素を取得
+        const headerHeight = document.querySelector('.navbar').offsetHeight; // ヘッダーの高さを取得
+
+        // スクロール位置を調整してスムーズにスクロール
+        window.scrollTo({
+            top: targetElement.offsetTop - headerHeight, // ヘッダー分だけオフセット
+            behavior: 'smooth' // スムーズスクロール
+        });
+    });
+});
+window.addEventListener('load', () => {
+    // URLにアンカーが含まれているか確認
+    const hash = window.location.hash;  // 現在のURLのハッシュ（#form など）
+
+    if (hash) {
+        const targetElement = document.querySelector(hash);  // ハッシュに対応する要素を取得
+
+        if (targetElement) {
+            const headerHeight = document.querySelector('.navbar').offsetHeight;  // ヘッダーの高さを取得
+
+            // スクロール位置を調整してスムーズにスクロール
+            window.scrollTo({
+                top: targetElement.offsetTop - headerHeight,  // ヘッダー分だけオフセット
+                behavior: 'smooth'  // スムーズスクロール
+            });
+        }
+    }
+});
+
