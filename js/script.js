@@ -90,3 +90,32 @@ document.querySelectorAll('a[href="#"]').forEach((anchor) => {
 window.addEventListener("load", () => {
   document.querySelector("main").classList.add("loaded");
 });
+
+  
+  // Prefetch機能の維持
+  document.querySelectorAll('a[href]').forEach((link) => {
+    const href = link.getAttribute("href");
+    if (href && !href.startsWith("#")) {
+      const prefetchLink = document.createElement("link");
+      prefetchLink.rel = "prefetch";
+      prefetchLink.href = href;
+      document.head.appendChild(prefetchLink);
+    }
+  });
+  
+// アコーディオンを制御するスクリプト
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const target = document.querySelector(header.dataset.target);
+
+        // 他のアイテムを閉じないようにする
+        if (header.classList.contains('active')) {
+            header.classList.remove('active');
+            target.classList.remove('active');
+        } else {
+            header.classList.add('active');
+            target.classList.add('active');
+        }
+    });
+});
+
