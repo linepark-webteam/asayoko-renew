@@ -366,7 +366,7 @@
     border-top: 1px solid #333;
 }
 
-/* アコーディオン：ヘッダー */
+/* アコーディオンヘッダー */
 .accordion-header {
     background-color: #fff;
     padding: 15px;
@@ -379,7 +379,7 @@
     color: #333;
     border: none;
 }
-/* ヘッダー アクティブ時 */
+/* アコーディオンヘッダー：アクティブ時 */
 .accordion-header.active {
     font-weight: bold;
 }
