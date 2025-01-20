@@ -65,9 +65,9 @@
         <nav class="navbar">
             <div class="logo">
                 <a href="../">
-                <img src="../img/logo.webp" alt="あさの横浜">
-            </a>
-        </div>
+                    <img src="../img/logo.webp" alt="あさの横浜">
+                </a>
+            </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="../#form">例会情報</a></li>
                 <li><a href="../guest/">ゲスト様へ</a></li>
@@ -85,9 +85,98 @@
     <!-- header -->
 
     <main>
+        <section class="contact container">
+            <div class="contact-container">
+                <div class="contact-headline">
+                    <h2>お問い合わせ</h2>
+                </div>
+
+                <form id="contact-form" action="./confirm.php" method="post">
+
+                    <!-- 会員区分 -->
+                    <div class="form-group">
+                        <div class="form-heading">
+                            <label for="memberType">会員区分：<span class="badge bg-secondary any">任意</span></label>
+                        </div>
+                        <select id="memberType" name="memberType">
+                            <option class="default" value="">--選択してください--</option>
+                            <option value="正会員【ゴールドバッチ】">正会員【ゴールドバッチ】</option>
+                            <option value="正会員【赤バッチ】">正会員【赤バッチ】</option>
+                            <option value="準会員【緑バッチ】">準会員【緑バッチ】</option>
+                            <option value="非会員">非会員</option>
+                        </select>
+                    </div>
 
 
+                    <!-- 登録会場 -->
+                    <div class="form-group">
+                        <div class="form-heading">
+                            <label for="registrationLocation">登録会場：<span
+                                    class="badge bg-secondary any">任意</span></label>
+                        </div>
+                        <input type="text" id="registrationLocation" name="registrationLocation" placeholder="例：横浜会場" />
+                    </div>
+
+                    <!-- 会社名 -->
+                    <div class="form-group">
+                        <div class="form-heading">
+                            <label for="companyName">会社名：<span class="badge bg-secondary any">任意</span></label>
+                        </div>
+                        <input type="text" id="companyName" name="companyName" placeholder="例：株式会社あさ横" />
+                    </div>
+
+                    <!-- お名前 -->
+                    <div class="form-group">
+                        <div class="form-heading">
+                            <label for="name">お名前：<span class="badge bg-primary required">必須</span></label>
+                        </div>
+                        <input type="text" id="name" name="name" required placeholder="例：山田太郎" />
+                    </div>
+
+                    <!-- ふりがな -->
+                    <div class="form-group">
+                        <div class="form-heading">
+                            <label for="kana">ふりがな：<span class="badge bg-primary required">必須</span></label>
+                        </div>
+                        <input type="text" id="kana" name="kana" required placeholder="例：やまだたろう" />
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <div class="form-heading">
+                            <label for="email">Email：<span class="badge bg-primary required">必須</span></label>
+                        </div>
+                        <input type="email" id="email" name="email" required placeholder="例：example@example.com" />
+                    </div>
+
+                    <!-- 電話番号 -->
+                    <div class="form-group">
+                        <div class="form-heading">
+                            <label for="phone">電話番号：<span class="badge bg-primary required">必須</span></label>
+                        </div>
+                        <input type="tel" id="phone" name="phone" required placeholder="例：090-1234-5678" />
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-heading">
+                            <label for="message">お問い合わせ内容：<span class="badge bg-primary required">必須</span></label>
+                        </div>
+                        <textarea id="message" name="message" required rows="5"
+                            placeholder="ご質問・ご意見などをご記入ください"></textarea>
+                    </div>
+
+                    <div class="submit-button mt-5">
+                        <button type="submit" class="btn btn-primary col-6 px-4 py-3">
+                            <span class="fs-lg-6 fs-6 fw-bold">確認画面へ</span>
+                        </button>
+                    </div>
+                </form>
+
+                <div id="form-result"></div>
+            </div>
+        </section>
     </main>
+
 
     <section class="sns-icons container mt-5">
         <div class="sns-icon-box">
