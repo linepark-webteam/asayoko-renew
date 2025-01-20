@@ -3,12 +3,14 @@ main {
 }
 
 h2 {
+    font-weight: bold;
     font-size: 2.4rem;
     line-height: 2;
     letter-spacing: 1px;
 }
 
-p {
+p, label, select, input, textarea {
+    color: #333;
     font-size: 1.6rem;
     line-height: 2;
     letter-spacing: 1px;
@@ -26,7 +28,7 @@ p {
         line-height: 2;
     }
     
-    p {
+    p, label, select, input, textarea {
         font-size: 1.6rem;
         line-height: 2;
     }
@@ -37,7 +39,7 @@ p {
         line-height: 2;
     }
     
-    p {
+    p, label, select, input, textarea {
         font-size: 1.6rem;
         line-height: 2;
     }
@@ -48,19 +50,9 @@ p {
         line-height: 2;
     }
     
-    p {
+    p, label, select, input, textarea {
         font-size: 1.2rem;
         line-height: 2;
-    }
-
-    .member-img {
-        display: flex;
-        justify-content: center;
-    }
-    .shusei-asayoko-map {
-        width: 45vw;
-        max-width: 700px;
-        height: auto;
     }
 }
 @media screen and (max-width: 767px) {
@@ -69,7 +61,7 @@ p {
         line-height: 2;
     }
     
-    p {
+    p, label, select, input, textarea {
         font-size: 1rem;
         line-height: 2;
     }
@@ -80,13 +72,9 @@ p {
         line-height: 2;
     }
     
-    p {
+    p, label, select, input, textarea {
         font-size: 1rem;
         line-height: 2;
-    }
-    .shusei-asayoko-map {
-        width: 60vw;
-        height: auto;
     }
 }
 @media screen and (max-width: 377px) {
@@ -95,12 +83,53 @@ p {
         line-height: 2;
     }
     
-    p {
+    p, label, select, input, textarea {
         font-size: 1rem;
         line-height: 2;
     }
 }
 
-input {
-    border: 1px solid #333;
+select, input, textarea {
+    border: 3px solid #333;
+    border-radius: 10px;
+    padding: 0 1rem;
+}
+
+select, input {
+    width: 45%;
+}
+@media screen and (max-width: 767px) {
+    select, input {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 469px) {
+    select, input {
+        width: 75%;
+    }
+}
+
+select .default {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+}
+
+.form-heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.submit-button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit-button {
+    width: 50%;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
