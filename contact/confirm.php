@@ -25,20 +25,9 @@ $message = $_SESSION['message'] ?? '';
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="守成クラブあさの横浜会場！守成クラブは、中小企業の経営者による異業種商談会を運営している全国組織の会です。" />
-    <meta property="og:site_name" content="守成クラブあさの横浜会場" />
-    <meta property="og:url" content="https://asayoko-shusei.online/" />
-    <meta property="og:title" content="守成クラブあさの横浜会場" />
-    <meta property="og:description" content="守成クラブあさの横浜会場！守成クラブは、中小企業の経営者による異業種商談会を運営している全国組織の会です。" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="守成クラブあさの横浜会場！守成クラブは、中小企業の経営者による異業種商談会を運営している全国組織の会です。" />
-    <meta name="twitter:title" content="守成クラブあさの横浜会場" />
-    <meta name="twitter:url" content="https://asayoko-shusei.online" />
-    <meta name="twitter:domain" content="asayoko-shusei.online" />
     <title>お問合わせ内容確認</title>
-    <link rel="icon" href="../img/favicon32.png" sizes="32x32" />
-    <link rel="icon" href="../img/favicon192.png" sizes="192x192" />
+    <link rel="icon" href="../img/favicon32.webp" sizes="32x32" />
+    <link rel="icon" href="../img/favicon192.webp" sizes="192x192" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,7 +66,7 @@ $message = $_SESSION['message'] ?? '';
                 <li><a href="../guest/">ゲスト様へ</a></li>
                 <li><a href="../asayoko-features/">あさの横浜の特徴</a></li>
                 <li><a href="../member/">会員紹介</a></li>
-                <li><a href="#">お問合せ</a></li>
+                <li><a href="../contact/">お問合せ</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
