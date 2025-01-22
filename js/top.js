@@ -43,7 +43,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     const targetElement = document.getElementById(targetId); // 対象の要素を取得
 
     if (targetElement) {
-      const headerHeight = document.querySelector(".navbar") ? document.querySelector(".navbar").offsetHeight : 0; // ヘッダーの高さを取得（存在する場合）
+      const headerHeight = document.querySelector(".navbar")
+        ? document.querySelector(".navbar").offsetHeight
+        : 0; // ヘッダーの高さを取得（存在する場合）
 
       // スクロール位置を調整してスムーズにスクロール
       window.scrollTo({
@@ -55,19 +57,21 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // ページロード時に、もしURLにアンカーが含まれていればその位置にスクロール
-window.addEventListener('load', () => {
-  const hash = window.location.hash;  // 現在のURLのハッシュ（#form など）
+window.addEventListener("load", () => {
+  const hash = window.location.hash; // 現在のURLのハッシュ（#form など）
 
   if (hash) {
-    const targetElement = document.querySelector(hash);  // ハッシュに対応する要素を取得
+    const targetElement = document.querySelector(hash); // ハッシュに対応する要素を取得
 
     if (targetElement) {
-      const headerHeight = document.querySelector(".navbar") ? document.querySelector(".navbar").offsetHeight : 0; // ヘッダーの高さを取得
+      const headerHeight = document.querySelector(".navbar")
+        ? document.querySelector(".navbar").offsetHeight
+        : 0; // ヘッダーの高さを取得
 
       // スクロール位置を調整してスムーズにスクロール
       window.scrollTo({
-        top: targetElement.offsetTop - headerHeight,  // ヘッダー分だけオフセット
-        behavior: 'smooth'  // スムーズスクロール
+        top: targetElement.offsetTop - headerHeight, // ヘッダー分だけオフセット
+        behavior: "smooth", // スムーズスクロール
       });
     }
   }
@@ -91,31 +95,46 @@ window.addEventListener("load", () => {
   document.querySelector("main").classList.add("loaded");
 });
 
-  
-  // Prefetch機能の維持
-  document.querySelectorAll('a[href]').forEach((link) => {
-    const href = link.getAttribute("href");
-    if (href && !href.startsWith("#")) {
-      const prefetchLink = document.createElement("link");
-      prefetchLink.rel = "prefetch";
-      prefetchLink.href = href;
-      document.head.appendChild(prefetchLink);
-    }
-  });
-  
-// アコーディオンを制御するスクリプト
-document.querySelectorAll('.accordion-header').forEach(header => {
-    header.addEventListener('click', () => {
-        const target = document.querySelector(header.dataset.target);
-
-        // 他のアイテムを閉じないようにする
-        if (header.classList.contains('active')) {
-            header.classList.remove('active');
-            target.classList.remove('active');
-        } else {
-            header.classList.add('active');
-            target.classList.add('active');
-        }
-    });
+// Prefetch機能の維持
+document.querySelectorAll("a[href]").forEach((link) => {
+  const href = link.getAttribute("href");
+  if (href && !href.startsWith("#")) {
+    const prefetchLink = document.createElement("link");
+    prefetchLink.rel = "prefetch";
+    prefetchLink.href = href;
+    document.head.appendChild(prefetchLink);
+  }
 });
 
+// 申し込みフォームボタンの自動更新
+const currentDate = new Date();
+
+// 各イベントの表示/非表示を制御する
+const scheduleButtons = document.querySelectorAll(".application-btn.schedule");
+scheduleButtons.forEach((button) => {
+  const startDate = new Date(button.getAttribute("data-start-date"));
+  const endDate = new Date(button.getAttribute("data-end-date"));
+
+  // 開始日時と終了日時で表示/非表示を決定
+  if (currentDate < startDate || currentDate > endDate) {
+    button.style.display = "none"; // 表示する期間外
+  } else {
+    button.style.display = "block"; // 表示期間内
+  }
+});
+
+// アコーディオンを制御するスクリプト
+document.querySelectorAll(".accordion-header").forEach((header) => {
+  header.addEventListener("click", () => {
+    const target = document.querySelector(header.dataset.target);
+
+    // 他のアイテムを閉じないようにする
+    if (header.classList.contains("active")) {
+      header.classList.remove("active");
+      target.classList.remove("active");
+    } else {
+      header.classList.add("active");
+      target.classList.add("active");
+    }
+  });
+});
