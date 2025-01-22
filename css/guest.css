@@ -2,14 +2,14 @@ main {
     padding-top: var(--navbar-height);
 }
 
-h2 {
+h1 {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2;
     letter-spacing: 1px;
 }
 
-h3, h4 {
+h2, h3 {
     font-size: 2rem;
     font-weight: bold;
     line-height: 2;
@@ -23,10 +23,10 @@ p, span, li {
 }
 
 @media screen and (max-width: 1399px) {
-    h2 {
+    h1 {
         font-size: 2.4rem;
     }
-    h3, h4 {
+    h2, h3 {
         font-size: 2rem;
     }
     p, span, li {
@@ -34,10 +34,10 @@ p, span, li {
     }
 }
 @media screen and (max-width: 1199px) {
-    h2 {
+    h1 {
         font-size: 2.2rem;
     }
-    h3, h4 {
+    h2, h3 {
         font-size: 1.8rem;
     }
     p, span, li {
@@ -45,10 +45,10 @@ p, span, li {
     }
 }
 @media screen and (max-width: 991px) {
-    h2 {
+    h1 {
         font-size: 2rem;
     }
-    h3, h4 {
+    h2, h3 {
         font-size: 1.6rem;
     }
     p, span, li {
@@ -56,10 +56,10 @@ p, span, li {
     }
 }
 @media screen and (max-width: 767px) {
-    h2 {
+    h1 {
         font-size: 1.4rem;
     }
-    h3, h4 {
+    h2, h3 {
         font-size: 1.2rem;
     }
     p, span, li {
@@ -67,10 +67,10 @@ p, span, li {
     }
 }
 @media screen and (max-width: 469px) {
-    h2 {
+    h1 {
         font-size: 1.4rem;
     }
-    h3, h4 {
+    h2, h3 {
         font-size: 1.2rem;
     }
     p, span, li {
@@ -78,10 +78,10 @@ p, span, li {
     }
 }
 @media screen and (max-width: 377px) {
-    h2 {
+    h1 {
         font-size: 1.4rem;
     }
-    h3, h4 {
+    h2, h3 {
         font-size: 1.2rem;
     }
     p, span, li {
@@ -89,10 +89,10 @@ p, span, li {
     }
 }
 @media screen and (max-width: 339px) {
-    h2 {
+    h1 {
         font-size: 1.2rem;
     }
-    h3, h4 {
+    h2, h3 {
         font-size: 1rem;
     }
     p, span, li {

@@ -6,13 +6,13 @@ body {
     color: #333;
 }
 
-h2 {
+h1 {
     font-weight: bold;
     font-size: 2.4rem;
     line-height: 2;
     letter-spacing: 1px;
 }
-h3 {
+h2 {
     font-weight: bold;
     font-size: 2rem;
     line-height: 2;
@@ -32,11 +32,11 @@ p, label, select, input, textarea {
 }
 
 @media screen and (max-width: 1399px) {
-    h2 {
+    h1 {
         font-size: 2.4rem;
         line-height: 2;
     }
-    h3 {
+    h2 {
         font-size: 2rem;
         line-height: 2;
     }
@@ -50,11 +50,11 @@ p, label, select, input, textarea {
     }
 }
 @media screen and (max-width: 1199px) {
-    h2 {
+    h1 {
         font-size: 2.4rem;
         line-height: 2;
     }
-    h3 {
+    h2 {
         font-size: 2rem;
         line-height: 2;
     }
@@ -68,11 +68,11 @@ p, label, select, input, textarea {
     }    
 }
 @media screen and (max-width: 991px) {
-    h2 {
+    h1 {
         font-size: 2rem;
         line-height: 2;
     }
-    h3 {
+    h2 {
         font-size: 1.6rem;
         line-height: 2;
     }
@@ -86,11 +86,11 @@ p, label, select, input, textarea {
     }
 }
 @media screen and (max-width: 767px) {
-    h2 {
+    h1 {
         font-size: 1.4rem;
         line-height: 2;
     }
-    h3 {
+    h2 {
         font-size: 1.2rem;
         line-height: 2;
     }
@@ -104,11 +104,11 @@ p, label, select, input, textarea {
     }
 }
 @media screen and (max-width: 469px) {
-    h2 {
+    h1 {
         font-size: 1.4rem;
         line-height: 2;
     }
-    h3 {
+    h2 {
         font-size: 1.2rem;
         line-height: 2;
     }
@@ -122,11 +122,11 @@ p, label, select, input, textarea {
     }
 }
 @media screen and (max-width: 377px) {
-    h2 {
+    h1 {
         font-size: 1.4rem;
         line-height: 2;
     }
-    h3 {
+    h2 {
         font-size: 1.2rem;
         line-height: 2;
     }

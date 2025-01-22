@@ -81,7 +81,7 @@ $message = $_SESSION['message'] ?? '';
         <section class="contact container">
             <div class="contact-container">
                 <div class="contact-headline">
-                    <h2>お問合わせ内容のご確認</h2>
+                    <h1>お問合わせ内容のご確認</h1>
                 </div>
 
                 <div class="container">
@@ -89,42 +89,42 @@ $message = $_SESSION['message'] ?? '';
                     <form action="sendmail.php" method="post">
 
                         <div class="mt-3">
-                            <h3>会員区分</h3>
+                            <h2>会員区分</h2>
                             <p class="answer"><?php echo htmlspecialchars($classification); ?></p>
                         </div>
 
                         <div class="mt-3">
-                            <h3>登録会場</h3>
+                            <h2>登録会場</h2>
                             <p class="answer"><?php echo htmlspecialchars($registrationLocation); ?></p>
                         </div>
 
                         <div class="mt-3">
-                            <h3>会社名</h3>
+                            <h2>会社名</h2>
                             <p class="answer"><?php echo htmlspecialchars($companyName); ?></p>
                         </div>
 
                         <div class="mt-3">
-                            <h3>お名前</h3>
+                            <h2>お名前</h2>
                             <p class="answer"><?php echo htmlspecialchars($name); ?></p>
                         </div>
 
                         <div class="mt-3">
-                            <h3>ふりがな</h3>
+                            <h2>ふりがな</h2>
                             <p class="answer"><?php echo htmlspecialchars($kana); ?></p>
                         </div>
 
                         <div class="mt-3">
-                            <h3>メールアドレス</h3>
+                            <h2>メールアドレス</h2>
                             <p class="answer"><?php echo htmlspecialchars($email); ?></p>
                         </div>
 
                         <div class="mt-3">
-                            <h3>電話番号</h3>
+                            <h2>電話番号</h2>
                             <p class="answer"><?php echo htmlspecialchars($phone); ?></p>
                         </div>
 
                         <div class="mt-3">
-                            <h3>お問い合わせ内容</h3>
+                            <h2>お問い合わせ内容</h2>
                             <p class="answer"><?php echo nl2br(htmlspecialchars($message)); ?></p>
                         </div>
 
