@@ -211,3 +211,17 @@ textarea {
 .error {
     color: #ff0000;
 }
+
+.totop {
+    color: #0000ff;
+    text-decoration: underline;
+}
+.totop-box {
+    display: inline-block;
+}
+@media screen and (max-width: 469px) {
+    .totop-box {
+        display: flex;
+        flex-direction: column;
+    }
+}
