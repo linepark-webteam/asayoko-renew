@@ -167,6 +167,15 @@ select .default {
 textarea {
     width: 100%;
 }
+.char-count {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    text-align: left;
+}
+.char-count.warning {
+    color: #ff0000; /* 残り文字数50文字未満の場合の警告色 */
+}
 
 .form-heading {
     display: flex;
