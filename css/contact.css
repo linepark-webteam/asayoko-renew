@@ -181,15 +181,26 @@ textarea {
     align-items: center;
 }
 .submit-button {
+    background-color: #d9f2ff;
     width: 50%;
     font-weight: bold;
     letter-spacing: 1px;
+    padding: 15px 0;
 }
 
 .confirm-button {
     width: 30%;
     font-weight: bold;
     letter-spacing: 1px;
+    padding: 15px 0;
+}
+/* 修正する ボタン */
+.return {
+    background-color: #e6e6e6;
+}
+/* 送信する ボタン */
+.proceed {
+    background-color: #d9f2ff;
 }
 @media screen and (max-width: 767px) {
     .confirm-button {

@@ -129,8 +129,8 @@ $message = $_SESSION['message'] ?? '';
                         </div>
 
                         <div class="my-5 confirm-button-box">
-                            <a href="../contact/" class="confirm-button btn btn-secondary me-3">修正する</a>
-                            <button type="submit" class="confirm-button btn btn-primary">送信する</button>
+                            <a href="../contact/" class="confirm-button return btn btn-outline-secondary  me-3">修正する</a>
+                            <button type="submit" class="confirm-button proceed btn btn-outline-primary">送信する</button>
                         </div>
                     </form>
                 </div>
