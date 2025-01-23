@@ -84,27 +84,3 @@ window.addEventListener("load", () => {
       document.head.appendChild(prefetchLink);
     }
   });
-
-  // お問い合わせページ用 文字数のカウントダウン
-  document.addEventListener("DOMContentLoaded", () => {
-    const textarea = document.getElementById("message");
-    const charCount = document.getElementById("charCount");
-    const maxLength = 1500; // 最大文字数
-
-    // 初期化：残り文字数を表示
-    charCount.textContent = `${maxLength - textarea.value.length}文字以内`;
-
-    // 入力イベントで残り文字数を更新
-    textarea.addEventListener("input", () => {
-        const remaining = maxLength - textarea.value.length;
-
-        charCount.textContent = `残り${remaining}文字`;
-
-        // 残り文字数が少なくなったら警告色を適用
-        if (remaining < 50) {
-            charCount.classList.add("warning");
-        } else {
-            charCount.classList.remove("warning");
-        }
-    });
-});
