@@ -90,16 +90,15 @@ h2, h3, h4, p, span, li {
 .catch-text-box {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 }
-@media screen and (min-width: 1400px) {
-    .catch-text {
-        font-size: 1.6rem;
-    }
-    .catch-text.str {
-        font-size: 2rem;
-    }
+.catch-text {
+    font-size: 1.6rem;
 }
+.catch-text.str {
+    font-size: 2rem;
+}
+
 @media screen and (max-width: 1399px) {
     .catch-text {
         font-size: 1.4rem;
@@ -355,13 +354,13 @@ h2, h3, h4, p, span, li {
         letter-spacing: 5px;
     }
     .info-heading {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     .info-heading-blue {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     .info-table {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     .info-table-map {
         width: 350px;

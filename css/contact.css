@@ -163,6 +163,31 @@ select, input {
 select .default {
     text-align: center;
 }
+/* セレクト要素のスタイル */
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* 必要に応じて調整 */
+}
+
+.custom-select {
+    appearance: none; /* デフォルトの矢印を非表示 */
+    -webkit-appearance: none; /* Safari対応 */
+    -moz-appearance: none; /* Firefox対応 */
+    background: #fff;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="gray"><path d="M10 12l-5-5h10l-5 5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* 矢印の位置調整 */
+    background-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* 矢印部分に干渉しないように隙間を確保 */
+.select-wrapper:after {
+    content: '';
+    position: absolute;
+    pointer-events: none; /* ユーザーがクリックできないようにする */
+}
 
 textarea {
     width: 100%;
