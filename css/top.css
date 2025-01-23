@@ -145,12 +145,13 @@ h2, h3, h4, p, span, li {
     }
 }
 
-
+/* お申込みフォームリンクボタンのスタイル */
 .forms-box {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 
 .form-btn {
     background-color: #d9f2ff;
@@ -158,46 +159,119 @@ h2, h3, h4, p, span, li {
     padding: 1rem 5rem;
 }
 
+.btn-date-box {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
 .btn-num {
     font-size: 2rem;
 }
-.btn-text {
+.btn-month, .btn-day {
     font-size: 1.4rem;
+}
+
+.btn-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-text {
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 1399px) {
+    .forms-box {
+        justify-content: space-between;
+    }
+    .btn-num {
+        font-size: 2rem;
+    }
+    .btn-month, .btn-day {
+        font-size: 1.4rem;
+    }
+    .btn-text {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .form-btn {
+        padding: 1rem 4rem;
+    }
+
+    .btn-num {
+        font-size: 2rem;
+    }
+    .btn-month, .btn-day {
+        font-size: 1.4rem;
+    }
+    .btn-text {
+        font-size: 1.6rem;
+    }
 }
 @media screen and (max-width: 991px) {
     .form-btn {
-        padding: 1rem 2rem;
+        padding: 1rem 3rem;
+    }
+
+    .btn-num {
+        font-size: 1.8rem;
+    }
+    .btn-month, .btn-day {
+        font-size: 1.2rem;
+    }
+    .btn-text {
+        font-size: 1.4rem;
     }
 }
 @media screen and (max-width: 767px) {
     .form-btn {
-        padding: 1rem 1rem;
+        padding: 1rem 1.4rem;
     }
+
     .btn-num {
         font-size: 1.4rem;
     }
+    .btn-month, .btn-day {
+        font-size: 1rem;
+    }
     .btn-text {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 }
-@media screen and (max-width: 402px) {
+@media screen and (max-width: 469px) {
     .form-btn {
-        padding: 0.5rem 0.8rem;
-        border-radius: 25px;
+        padding: 1rem 1rem;
     }
+
     .btn-num {
         font-size: 1.2rem;
     }
+    .btn-month, .btn-day {
+        font-size: 0.8rem;
+    }
     .btn-text {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
-@media screen and (max-width: 383px) {
+@media screen and (max-width: 377px) {
     .form-btn {
-        padding: 0.5rem 0.2rem;
-        border-radius: 25px;
+        border-radius: 20px;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .btn-num {
+        font-size: 1rem;
+    }
+    .btn-month, .btn-day {
+        font-size: 0.6rem;
+    }
+    .btn-text {
+        font-size: 0.8rem;
     }
 }
+
 
 /* 例会情報 */
 .info-texts-container h2, h3 {
