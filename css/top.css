@@ -1,18 +1,9 @@
 /* common.css のスタイルを打ち消し */
-h2 {
+h2, h3, h4, p, span, li {
     line-height: normal;
     letter-spacing: 0;
 }
 
-h3, h4 {
-    line-height: normal;
-    letter-spacing: 0;
-}
-
-p, span, li {
-    line-height: normal;
-    letter-spacing: 0;
-}
 
 /* Hero Section Styles */
 .hero-container {
@@ -52,24 +43,24 @@ p, span, li {
     white-space: noWrap;
 }
 
-.hero-content h2 {
+.hero-content h1 {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     font-weight: normal;
     font-size: 3rem;
 }
 @media screen and (max-width: 1267px) {
-    .hero-content h2 {
+    .hero-content h1 {
         font-size: 2.2rem;
     }
 }
 @media screen and (max-width: 929px) {
-    .hero-content h2 {
+    .hero-content h1 {
         font-size: 1.8rem;
     }
 }
 @media screen and (max-width: 390px) {
-    .hero-content h2 {
+    .hero-content h1 {
         font-size: 1.5rem;
     }
 }
@@ -456,7 +447,8 @@ p, span, li {
 }
 
 .accordion-content div,
-.accordion-content p {
+.accordion-content p,
+.accordion-content span {
     margin: 15px 0;
     line-height: 1.6;
     font-size: 1.2rem;
@@ -498,7 +490,8 @@ p, span, li {
         font-size: 1.5rem;
     }
     .accordion-content div,
-    .accordion-content p {
+    .accordion-content p,
+    .accordion-content span {
         font-size: 1.2rem;
     }
     .accordion-content-table {
@@ -513,7 +506,8 @@ p, span, li {
         font-size: 1.5rem;
     }
     .accordion-content div,
-    .accordion-content p {
+    .accordion-content p,
+    .accordion-content span {
         font-size: 1.2rem;
     }
     .accordion-content-table {
@@ -528,7 +522,8 @@ p, span, li {
         font-size: 1.4rem;
     }
     .accordion-content div,
-    .accordion-content p {
+    .accordion-content p,
+    .accordion-content span {
         font-size: 1.2rem;
     }
     .accordion-content-table {
@@ -543,7 +538,8 @@ p, span, li {
         font-size: 1.1rem;
     }
     .accordion-content div,
-    .accordion-content p {
+    .accordion-content p,
+    .accordion-content span {
         font-size: 1rem;
     }
     .accordion-content-table {
@@ -558,7 +554,8 @@ p, span, li {
         font-size: 1.1rem;
     }
     .accordion-content div,
-    .accordion-content p {
+    .accordion-content p,
+    .accordion-content span {
         font-size: 1rem;
     }
     .accordion-content-table {
@@ -573,7 +570,8 @@ p, span, li {
         font-size: 1rem;
     }
     .accordion-content div,
-    .accordion-content p {
+    .accordion-content p,
+    .accordion-content span {
         margin: 0;
         font-size: 1rem;
     }
@@ -593,7 +591,8 @@ p, span, li {
         font-size: 1rem;
     }
     .accordion-content div,
-    .accordion-content p {
+    .accordion-content p,
+    .accordion-content span {
         font-size: 1rem;
     }
     .accordion-content-table {

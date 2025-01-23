@@ -176,6 +176,148 @@ ul ul li {
 }
 /* リストの共通スタイル */
 
+/* ページbody共通スタイル */
+body {
+    color: #333;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+h2, h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+p, span, li, label, select, input, textarea {
+    font-size: 1.6rem;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+.badge {
+    font-size: 1.2rem;
+}
+.answer {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1399px) {
+    h1 {
+        font-size: 2.4rem;
+        line-height: 2;
+    }
+    h2, h3 {
+        font-size: 2rem;
+        line-height: 2;
+    }
+    
+    p, span, li, label, select, input, textarea {
+        font-size: 1.6rem;
+        line-height: 2;
+    }
+    .badge {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1199px) {
+    h1 {
+        font-size: 2.4rem;
+        line-height: 2;
+    }
+    h2, h3 {
+        font-size: 2rem;
+        line-height: 2;
+    }
+    
+    p, span, li, label, select, input, textarea {
+        font-size: 1.6rem;
+        line-height: 2;
+    }
+    .badge {
+        font-size: 1.2rem;
+    }    
+}
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 2;
+    }
+    h2, h3 {
+        font-size: 1.6rem;
+        line-height: 2;
+    }
+    
+    p, span, li, label, select, input, textarea {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    .badge {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    h2, h3 {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    
+    p, span, li, label, select, input, textarea {
+        font-size: 1rem;
+        line-height: 2;
+    }
+    .badge {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 469px) {
+    h1 {
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    h2, h3 {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    
+    p, span, li, label, select, input, textarea {
+        font-size: 1rem;
+        line-height: 2;
+    }
+    .badge {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 377px) {
+    h1 {
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    h2, h3 {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    
+    p, span, li, label, select, input, textarea {
+        font-size: 1rem;
+        line-height: 2;
+    }
+    .badge {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* ページbody共通スタイル */
+
 
 /* テーブル(表)の共通スタイル */
 th {
@@ -197,7 +339,6 @@ th {
     height: auto;
 }
 /* SNSアイコンのスタイル */
-
 
 /* フッターのスタイル */
 .footer {
