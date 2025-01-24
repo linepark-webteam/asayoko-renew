@@ -51,6 +51,19 @@ $message = $_SESSION['message'] ?? '';
 
     <!-- noindex -->
     <meta name="robots" content="noindex" />
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-87FXVWYFXK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-87FXVWYFXK");
+    </script>
 </head>
 
 <body>

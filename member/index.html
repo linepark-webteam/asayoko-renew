@@ -46,19 +46,20 @@
 
     <!-- noindex -->
     <meta name="robots" content="noindex" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-87FXVWYFXK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-87FXVWYFXK");
+    </script>
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-87FXVWYFXK"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-87FXVWYFXK");
-</script>
 
 <body>
     <link rel="prefetch" href="../">
@@ -71,9 +72,9 @@
         <nav class="navbar">
             <div class="logo">
                 <a href="../">
-                <img src="../img/logo.webp" alt="あさの横浜">
-            </a>
-        </div>
+                    <img src="../img/logo.webp" alt="あさの横浜">
+                </a>
+            </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="../#form">例会情報</a></li>
                 <li><a href="../guest/">ゲスト様へ</a></li>
