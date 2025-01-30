@@ -106,22 +106,22 @@ document.querySelectorAll("a[href]").forEach((link) => {
   }
 });
 
-// 申し込みフォームボタンの自動更新
-const currentDate = new Date();
+// // 申し込みフォームボタンの自動更新
+// const currentDate = new Date();
 
-// 各イベントの表示/非表示を制御する
-const scheduleButtons = document.querySelectorAll(".application-btn.schedule");
-scheduleButtons.forEach((button) => {
-  const startDate = new Date(button.getAttribute("data-start-date"));
-  const endDate = new Date(button.getAttribute("data-end-date"));
+// // 各イベントの表示/非表示を制御する
+// const scheduleButtons = document.querySelectorAll(".application-btn.schedule");
+// scheduleButtons.forEach((button) => {
+//   const startDate = new Date(button.getAttribute("data-start-datetime"));
+//   const endDate = new Date(button.getAttribute("data-end-datetime"));
 
-  // 開始日時と終了日時で表示/非表示を決定
-  if (currentDate < startDate || currentDate > endDate) {
-    button.style.display = "none"; // 表示する期間外
-  } else {
-    button.style.display = "block"; // 表示期間内
-  }
-});
+//   // 開始日時と終了日時で表示/非表示を決定
+//   if (currentDate < startDate || currentDate > endDate) {
+//     button.style.display = "none"; // 表示する期間外
+//   } else {
+//     button.style.display = "block"; // 表示期間内
+//   }
+// });
 
 // アコーディオンを制御するスクリプト
 document.querySelectorAll(".accordion-header").forEach((header) => {
