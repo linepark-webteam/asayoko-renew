@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<main>
-    <div class="container mt-5">
+<main style="opacity: 1;">
+    <div class="container">
         <h2>最新の記事</h2>
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
