@@ -32,9 +32,9 @@ main.loaded {
 :root {
     --navbar-height: 90px; /* ヘッダーの高さ */
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1110px) {
     :root {
-        --navbar-height: 60px;
+        --navbar-height: 50px;
     }
 }
 
@@ -59,20 +59,37 @@ main.loaded {
     z-index: 1000;
 }
 
-.logo img {
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.title-logo {
     width: 120px;
     height: auto;
 }
-
+.title-text {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
 @media screen and (max-width: 768px) {
-    .logo img {
-        width: 10vw;
+    .title-logo {
+        width: 15vw;
+    }
+    .title-text {
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .logo img {
-        width: 15vw;
+    .title-logo {
+        width: 18vw;
+    }
+    .title-text {
+        font-size: 1rem;
     }
 }
 
@@ -104,7 +121,7 @@ main.loaded {
 }
 
 /* Mobile styles */
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1110px) {
     .hamburger {
         display: flex;
         flex-direction: column;

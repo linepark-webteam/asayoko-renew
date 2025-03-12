@@ -20,6 +20,12 @@
     <meta name="twitter:url" content="https://asayoko-shusei.online" />
     <meta name="twitter:domain" content="asayoko-shusei.online" />
 
+    <title>ゲスト様へ</title>
+    <link rel="icon" href="../img/favicon32.webp" sizes="32x32" />
+    <link rel="icon" href="../img/favicon192.webp" sizes="192x192" />
+    <!-- アップルタッチアイコン -->
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.webp" sizes="180x180">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,13 +41,6 @@
     <link rel="stylesheet" href="../css/my-bootstrap.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/guest.css" />
-    <!-- <link rel="stylesheet" href="../css/toPagetop.css" /> -->
-
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- noindex -->
-    <meta name="robots" content="noindex" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-87FXVWYFXK"></script>
@@ -66,14 +65,17 @@
     <!-- header -->
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <a href="../">
-                    <img src="../img/logo.webp" alt="あさの横浜">
-                </a>
-            </div>
+
+            <a href="../">
+                <div class="title-box">
+                    <img class="title-logo" src="../img/header-logo.png" alt="" loading="lazy">
+                    <h1 class="title-text">あさの横浜会場</h1>
+                </div>
+            </a>
+
             <ul class="nav-links" id="nav-links">
                 <li><a href="../#form">例会情報</a></li>
-                <li><a href="#">ゲスト様へ</a></li>
+                <li><a href="../guest/">ゲスト様へ</a></li>
                 <li><a href="../asayoko-features/">あさの横浜の特徴</a></li>
                 <li><a href="../member/">会員紹介</a></li>
                 <li><a href="../contact/">お問合せ</a></li>
@@ -103,24 +105,34 @@
                         </p>
                         <p>決裁権者の集まりだからこそ、スピーディーにビジネスが展開していきます。</p>
 
-                        <h3 class="mt-5 mb-3">売上を伸ばすことが第一の目的</h3>
-                        <p>守成クラブは、単なる異業種交流とは違い「商売繁盛」を前面に打ち出し、<span
-                                class="blue-text">「本音で自社をPRし互いに商売（実利）に徹して売上を伸ばす」ことを第一の目的</span>としています。
-                        </p>
-                        <ul>
-                            <li>ビジネスチャンスを拡大し、営業力を高めたい！</li>
-                            <li>とにかく販売力を伸ばしたい！</li>
-                        </ul>
-                        <p>そんなニーズをお持ちの経営者に最適な会です。</p>
+                        <div class="mt-5">
+                            <h3 class="pt-1 mb-3">売上を伸ばすことが第一の目的</h3>
+                            <p>守成クラブは、単なる異業種交流とは違い「商売繁盛」を前面に打ち出し、<span
+                                    class="blue-text">「本音で自社をPRし互いに商売（実利）に徹して売上を伸ばす」ことを第一の目的</span>としています。
+                            </p>
+                            <ul>
+                                <li>ビジネスチャンスを拡大し、営業力を高めたい！</li>
+                                <li>とにかく販売力を伸ばしたい！</li>
+                            </ul>
+                            <p>そんなニーズをお持ちの経営者に最適な会です。</p>
+                        </div>
 
-                        <h3 class="mt-5 mb-3">規模が大きい</h3>
-                        <p>日本全国に<span class="blue-text">約280会場</span>あり、会員数は<span class="blue-text">約32,000社</span>。</p>
-                        <p>「自分たちでマーケットを創る！」という考えのもと、日々拡大成長しています。</p>
 
-                        <h3 class="mt-5 mb-3">リアル（対面）を重視</h3>
-                        <p>コロナ禍以降、オンラインでのコミュニケーションが急拡大しましたが、守成クラブは<span
-                                class="blue-text">リアル（対面）でのコミュニケーションを重視</span>しています。</p>
-                        <p>リアル（対面）だからこその信頼関係構築が可能となり、有用な人脈を構築できます。</p>
+                        <div class="mt-5">
+                            <h3 class="pt-1 mb-3">規模が大きい</h3>
+                            <p>日本全国に<span class="blue-text">約280会場</span>あり、会員数は<span class="blue-text">約32,000社</span>。
+                            </p>
+                            <p>「自分たちでマーケットを創る！」という考えのもと、日々拡大成長しています。</p>
+                        </div>
+
+
+                        <div class="mt-5">
+                            <h3 class="pt-1 mb-3">リアル（対面）を重視</h3>
+                            <p>コロナ禍以降、オンラインでのコミュニケーションが急拡大しましたが、守成クラブは<span
+                                    class="blue-text">リアル（対面）でのコミュニケーションを重視</span>しています。</p>
+                            <p>リアル（対面）だからこその信頼関係構築が可能となり、有用な人脈を構築できます。</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -137,9 +149,9 @@
                                 <span>入会時は、</span>
                                 <ul>
                                     <li>準会員</li>
-                                    <li>自会場（所属会場）の例会のみに参加可能</li>
+                                    <li><span class="blue-text">自会場（所属会場）の例会のみ</span>に参加可能</li>
                                 </ul>
-                                <span class="sm-text">（あさの横浜会場の例会は、毎月第3土曜日10：00～12：30に開催しています）</span>
+                                <span class="sm-text">（あさの横浜会場の例会は、毎月第3土曜日10：00～12：20に開催しています）</span>
                             </div>
 
                             <div class="my-5">
@@ -147,13 +159,13 @@
                                     <span>1名以上紹介（入会）すると、</span>
                                     <ul>
                                         <li>正会員</li>
-                                        <li>全国すべての会場の例会に参加可能</li>
+                                        <li><span class="blue-text">全国すべての会場の例会</span>に参加可能</li>
                                     </ul>
                                 </div>
                                 <span>となります。</span>
                             </div>
                         </div>
-                        <p>正会員になって様々な会場の例会に参加することが商売繁盛の近道です。</p>
+                        <p><span class="blue-text">正会員になって様々な会場の例会に参加することが商売繁盛の近道</span>です。</p>
                     </div>
                 </div>
             </div>
@@ -178,7 +190,7 @@
                         </ul>
                         <p>
                             よって、入会時には、<br>
-                            11,000円 ＋ 28,600円 ＝ 39,600円<br>
+                            11,000円 ＋ 28,600円 ＝ <strong>39,600円</strong><br>
                             をお振込みいただきます。
                         </p>
 
@@ -200,7 +212,8 @@
                 <div class="guest-box container">
                     <div class="guest-desc container mt-3">
                         <ul>
-                            <li>ゲスト参加は大いに歓迎されますが、同一人物の参加は守成クラブの全会場を通じて1回のみとさせていただきます。</li>
+                            <li>ゲスト参加は大いに歓迎されますが、同一人物の参加は<span class="blue-text">守成クラブの全会場を通じて1回のみ</span>とさせていただきます。
+                            </li>
                             <li>ゲスト参加は、紹介者経由でのお申込みとなります（ご自身での登録作業等はございません）。</li>
                         </ul>
                     </div>
@@ -214,7 +227,16 @@
                 <div class="image-box container">
                     <div class="image-desc container mt-3">
                         <p class="my-3">毎月の例会の様子をまとめた映像です。</p>
-                        <img src="../img/meeting-image.webp" alt="車座商談会イメージ">
+                        <!-- <a href="https://youtu.be/ZfG7FM7mWEw" target="_blank">
+                            <img src="../img/meeting-image.webp" alt="車座商談会動画リンク"> -->
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/ZfG7FM7mWEw?si=0iCu__xUYWZVNeMN"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen loading="lazy">
+                            </iframe>
+                        </div>
+                        <!-- </a> -->
                     </div>
                 </div>
             </div>
@@ -224,14 +246,17 @@
 
     <section class="sns-icons container mt-5">
         <div class="sns-icon-box">
-            <a href="#"><img class="sns-icon" src="../img/line.webp" alt="LINE"></a>
-            <a href="#"><img class="sns-icon" src="../img/facebook.webp" alt="Facebook"></a>
-            <a href="#"><img class="sns-icon" src="../img/instagram.webp" alt="Instagram"></a>
+            <a href="https://line.me/R/ti/p/@617tvtor" target="_blank"><img class="sns-icon" src="../img/line.webp"
+                    alt="LINE" loading="lazy"></a>
+            <a href="https://www.facebook.com/groups/327293299262540/?locale=ja_JP" target="_blank"><img
+                    class="sns-icon" src="../img/facebook.webp" alt="Facebook" loading="lazy"></a>
+            <a href="https://www.instagram.com/asano_yokohama.shusei/" target="_blank"><img class="sns-icon"
+                    src="../img/instagram.webp" alt="Instagram" loading="lazy"></a>
         </div>
     </section>
 
     <footer class="footer container mt-5">
-        <img class="footer-logo mb-3" src="../img/logo.webp" alt="">
+        <img class="footer-logo mb-3" src="../img/logo.webp" alt="" loading="lazy">
         <small class="footer-copy pb-3">Copyright 2025 守成クラブ あさの横浜会場</small>
     </footer>
 

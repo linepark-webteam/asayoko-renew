@@ -21,8 +21,10 @@
     <meta name="twitter:domain" content="asayoko-shusei.online" />
 
     <title>会員紹介</title>
-    <link rel="icon" href="../img/favicon32.webp" sizes="32x32" />
-    <link rel="icon" href="../img/favicon192.webp" sizes="192x192" />
+    <link rel="icon" href="../img/favicon48.ico" sizes="48x48" />
+    <link rel="icon" href="../img/favicon192.ico" sizes="192x192" />
+    <!-- アップルタッチアイコン -->
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.webp" sizes="180x180">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,13 +41,6 @@
     <link rel="stylesheet" href="../css/my-bootstrap.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/member.css" />
-    <!-- <link rel="stylesheet" href="../css/toPagetop.css" /> -->
-
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- noindex -->
-    <meta name="robots" content="noindex" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-87FXVWYFXK"></script>
@@ -67,19 +62,23 @@
     <link rel="prefetch" href="../asayoko-features/">
     <link rel="prefetch" href="../contact/">
 
+
     <!-- header -->
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <a href="../">
-                    <img src="../img/logo.webp" alt="あさの横浜">
-                </a>
-            </div>
+
+            <a href="../">
+                <div class="title-box">
+                    <img class="title-logo" src="../img/header-logo.png" alt="" loading="lazy">
+                    <h1 class="title-text">あさの横浜会場</h1>
+                </div>
+            </a>
+
             <ul class="nav-links" id="nav-links">
                 <li><a href="../#form">例会情報</a></li>
                 <li><a href="../guest/">ゲスト様へ</a></li>
                 <li><a href="../asayoko-features/">あさの横浜の特徴</a></li>
-                <li><a href="#">会員紹介</a></li>
+                <li><a href="../member/">会員紹介</a></li>
                 <li><a href="../contact/">お問合せ</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -90,6 +89,7 @@
         </nav>
     </header>
     <!-- header -->
+
 
     <main>
         <section class="member container">
@@ -102,6 +102,7 @@
                         <p>ぜひご覧ください。</p>
                     </div>
                     <div class="member-img container mt-3">
+                        <p>クリック↓</p>
                         <a href="https://asayoko.shusei-maps.com/" target="_blank">
                             <img class="shusei-asayoko-map" src="../img/shusei-asayoko-map.webp" alt="あさの横浜会場会員マップ">
                         </a>
@@ -114,14 +115,17 @@
 
     <section class="sns-icons container mt-5">
         <div class="sns-icon-box">
-            <a href="#"><img class="sns-icon" src="../img/line.webp" alt="LINE"></a>
-            <a href="#"><img class="sns-icon" src="../img/facebook.webp" alt="Facebook"></a>
-            <a href="#"><img class="sns-icon" src="../img/instagram.webp" alt="Instagram"></a>
+            <a href="https://line.me/R/ti/p/@617tvtor" target="_blank"><img class="sns-icon" src="../img/line.webp"
+                    alt="LINE" loading="lazy"></a>
+            <a href="https://www.facebook.com/groups/327293299262540/?locale=ja_JP" target="_blank"><img
+                    class="sns-icon" src="../img/facebook.webp" alt="Facebook" loading="lazy"></a>
+            <a href="https://www.instagram.com/asano_yokohama.shusei/" target="_blank"><img class="sns-icon"
+                    src="../img/instagram.webp" alt="Instagram" loading="lazy"></a>
         </div>
     </section>
 
     <footer class="footer container mt-5">
-        <img class="footer-logo mb-3" src="../img/logo.webp" alt="">
+        <a href="#"><img class="footer-logo mb-3" src="../img/logo.webp" alt="" loading="lazy"></a>
         <small class="footer-copy pb-3">Copyright 2025 守成クラブ あさの横浜会場</small>
     </footer>
 
