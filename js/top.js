@@ -16,6 +16,50 @@ if (isTopPage) {
   });
 }
 
+
+// Catch メッセージアニメーション
+window.addEventListener("load", function () {
+  function animateText(element, callback) {
+    const text = element.dataset.text; // data-text 属性から文字列を取得
+    element.innerHTML = ""; // 元のテキストを削除
+    let delay = 0;
+
+    text.split("").forEach((char, index) => {
+      const span = document.createElement("span");
+      span.textContent = char;
+      span.style.opacity = "0";
+      span.style.transition = "opacity 0.3s ease-in-out";
+      span.style.display = "inline-block";
+
+      element.appendChild(span);
+
+      setTimeout(() => {
+        span.style.opacity = "1";
+      }, delay);
+
+      delay += 50; // 各文字の表示タイミング（100ms間隔）
+    });
+
+    // 全ての文字が表示された後に次の処理を実行（callback）
+    setTimeout(() => {
+      if (callback) callback();
+    }, delay);
+  }
+
+  const firstText = document.querySelector(".text-animate.first");
+  const secondText = document.querySelector(".text-animate.second");
+
+  if (firstText) {
+    animateText(firstText, () => {
+      if (secondText) {
+        animateText(secondText);
+      }
+    });
+  }
+});
+
+
+
 // Hamburger Menu Toggle
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
